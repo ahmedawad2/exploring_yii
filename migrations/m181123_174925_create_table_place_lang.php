@@ -2,9 +2,6 @@
 
 use yii\db\Migration;
 
-/**
- * Class m181123_174925_create_table_place_lang
- */
 class m181123_174925_create_table_place_lang extends Migration
 {
     const TABLE = 'place_lang';
@@ -12,26 +9,6 @@ class m181123_174925_create_table_place_lang extends Migration
     const INDEX_PREFIX = 'idx_';
     const FOREIGN_KEY_PREFIX = 'fk_';
 
-    /**
-     * {@inheritdoc}
-     */
-//    public function safeUp()
-//    {
-//
-//    }
-//
-//    /**
-//     * {@inheritdoc}
-//     */
-//    public function safeDown()
-//    {
-//        echo "m181123_174925_create_table_place_lang cannot be reverted.\n";
-//
-//        return false;
-//    }
-
-
-    // Use up()/down() to run migration code without a transaction.
     public function up()
     {
         $this->createTable(self::TABLE, [
@@ -68,9 +45,6 @@ class m181123_174925_create_table_place_lang extends Migration
             self::TABLE
         );
         $this->dropTable(self::TABLE);
-//        echo "m181123_174925_create_table_place_lang cannot be reverted.\n";
-
-//        return false;
     }
 
 }

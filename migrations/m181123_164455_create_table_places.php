@@ -2,32 +2,10 @@
 
 use yii\db\Migration;
 
-/**
- * Class m181123_164455_create_table_places
- */
 class m181123_164455_create_table_places extends Migration
 {
     const TABLE = 'place';
-    /**
-     * {@inheritdoc}
-     */
-//    public function safeUp()
-//    {
-//
-//    }
 
-    /**
-     * {@inheritdoc}
-     */
-//    public function safeDown()
-//    {
-//        echo "m181123_164455_create_table_places cannot be reverted.\n";
-//
-//        return false;
-//    }
-
-
-    // Use up()/down() to run migration code without a transaction.
     public function up()
     {
         $this->createTable(self::TABLE, [
@@ -42,9 +20,6 @@ class m181123_164455_create_table_places extends Migration
 
     public function down()
     {
-//        echo "m181123_164455_create_table_places cannot be reverted.\n";
-//
-//        return false;
         $this->dropTable(self::TABLE);
     }
 
