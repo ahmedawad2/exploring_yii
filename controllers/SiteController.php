@@ -61,6 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+//        die(var_dump(\Yii::$app->datetime));
         return $this->render('index');
     }
 
